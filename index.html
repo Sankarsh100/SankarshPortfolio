@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cer.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sankarsh Sanap</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sankarsh Sanap</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Sankarsh1.png" alt="Sankarsh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sankarsh Sanap</h1>
+        <p class="styled-paragraph"> Data Analyst| Data Engineer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sankarsh Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location='#contact'">
+            Contact Info
+          </button>
+
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sankarsh100/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Sankarsh100'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br>
+      <div class="section-container">
+        <div class="section__pic-container">
+
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <div style="font-size: 1.2em; line-height: 1.4;">
+              <p> I am a passionate Data Analytics Engineering graduate student at George Mason University, Fairfax, Virginia, with over three years of experience as a Data Engineer and Software Engineer. My professional journey includes working with high-profile clients like Walgreens Boots Alliance Ltd. during my tenure at Tata Consultancy Services (TCS), where I honed my expertise in data analytics, business intelligence, and cloud technologies.
+
+                With a strong foundation in SQL, Python, ETL, and data visualization tools like Power BI and Tableau, I excel at uncovering actionable insights that drive strategic business decisions. My ability to bridge the gap between technology, data, and business has allowed me to solve complex problems and deliver impactful solutions. Currently, I am expanding my expertise in Databricks, Snowflake, and cloud-based analytics to stay ahead in the rapidly evolving data landscape.</p>          </div>
+
+
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+       </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h2 class="experience-sub-title">Education</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+
+            <div class="education-item">
+              <h3>George Mason University, Fairfax, Virginia (GMU)</h3>
+              <p>Master of Science | Data Analytics Engineering</p>
+              <p>Jan 2024 - Dec 2025</p>
+              <p>Concentration: Applied ML, NLP with Deep Learning</p>
+              <p>CGPA: 3.93/4</p>
+            </div>
+
+            <div class="education-item">
+              <h3>Savitribai Phule Pune University (SPPU)</h3>
+              <p>Bachelor of Engineering | Mechanical Engineering</p>
+              <p>July 2017 - June 2021</p>
+              <p>CGPA: 3.9/4</p>
+            </div>
+          </div>
+
+          <hr class="separator"> <!-- Line separator between sections -->
+
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2 class="experience-sub-title">Experience</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+
+            <div class="experience-item">
+              <h3>Tata Consultancy Services Limited</h3>
+              <p>Data Engineer<br />Aug 2021 – Jan 2024</p>
+            </div>
+
+            <div class="experience-item">
+              <h3>Forbes Marshall Private Limited</h3>
+              <p>Project Intern<br />Dec 2020 – Feb 2021</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                 src="./assets/project1.webp"
+                alt="Diabetes Hypertension Stroke Prediction"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Diabetes Hypertension Stroke Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sankarsh100/More_DataAnalyticsProjects/tree/main/Diabetes%20Hypertension%20Stroke%20Prediction'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/project2.jpg"
+              alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Multichannel Retail Store Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sankarsh100/More_DataAnalyticsProjects/tree/main/Multichannel%20Retail%20Store%20Analysis'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fake News Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sankarsh100/Fake-News-Detection'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+
+
+
+
+
+
+    <section id="certifications">
+      <p class="section__text__p1">Showcasing My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-flip-container">
+
+
+
+        <!-- Certification Cloud Practitioner Recommendations:  -->
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Cloud Practitioner.jpeg" alt="Cloud Practitioner" class="cert-logo" />
+              <h2 class="cert-title">AWS Certified Cloud Practitioner</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Demonstrates my foundational understanding of AWS Cloud services, including core infrastructure and value-added offerings.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="location.href='https://www.credly.com/badges/4e75740c-5914-4280-a794-1961e68bf0f9/linked_in_profile'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Data Engineer Recommendations:  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Data Engineer.jpeg" alt="Li Logo" class="cert-logo" />
+              <h2 class="cert-title">AWS Certified Data Engineer – Associate</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                This certification showcases my proficiency in crafting, constructing, and enhancing data pipelines on AWS
+
+              </p>
+              <button
+                      class="btn btn-view-cert"
+                      onclick="location.href='https://www.credly.com/badges/0753f02f-4270-4001-90d4-a08fdff5ab1f/linked_in_profile'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Microsoft Certified: Power BI Data Analyst Associate  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Data Analyst.png" alt="Li Logo" class="cert-logo" />
+              <h2 class="cert-title">Power BI Data Analyst Associate</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Demonstrates my expertise in preparing, modeling, and visualizing data using Microsoft Power BI to uncover actionable insights.
+
+              </p>
+              <button
+                      class="btn btn-view-cert"
+                      onclick="location.href='https://learn.microsoft.com/en-us/users/sankarshsanap-1970/credentials/d78b5933f76ed1fd?ref=https%3A%2F%2Fwww.linkedin.com%2F'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Certification 1: Google -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/google.jpg" alt="Google Logo" class="cert-logo" />
+              <h2 class="cert-title">Introduction to Generative AI</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Google Cloud Skills Boost badge for completing hands-on labs on GCP.
+              </p>
+              <button
+                      class="btn btn-view-cert"
+                      onclick="location.href='https://www.cloudskillsboost.google/public_profiles/2eb36cce-e8d1-45ca-b968-aeb5a167e33d/badges/14363144?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Neo4j.png" alt="Neo4j Logo" class="cert-logo" />
+              <h2 class="cert-title">Neo4j Certified Professional</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Neo4j Certified Professional certification by demonstrating expertise in Neo4j's graph database technology.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="location.href='https://graphacademy.neo4j.com/c/7c8bd3db-f1bf-4398-9005-558237bd756f/'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/ExcelR.jpg" alt="ExcelR Logo" class="cert-logo" />
+              <h2 class="cert-title">Python for Data Science</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Completed a 6-month Data Science internship at ExcelR Solutions, achieving certification with distinction.
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/ExcelR.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Certification:  -->
+
+         <!-- Certification Neo4j:  -->
+       <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/Neo4j.png" alt="Neo4j Logo" class="cert-logo" />
+            <h2 class="cert-title">Neo4j Fundamentals</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Earned the Neo4j Fundamentals certification by completing training on graph databases and Neo4j.
+
+            </p>
+            <button
+              class="btn btn-view-cert"
+              onclick="location.href='https://graphacademy.neo4j.com/c/ca8ec58b-17f7-46a7-969c-95a609d0c397/'"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <!-- Certification Statistics for Data Science and Business Analysis:  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Udemy.jpg" alt="Udemy Logo" class="cert-logo" />
+              <h2 class="cert-title">Statistics for Data Science and Business Analysis</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Statistics for Data Science and Business Analysis certification from Udemy, covering fundamental statistical concepts and their applications in data science and business analytics.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="location.href='https://www.udemy.com/certificate/UC-a627256e-f983-4173-a4fe-6d19d5ab698f/'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Certification The Complete SQL Bootcamp: Go from Zero to Hero:  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Udemy.jpg" alt="Udemy Logo" class="cert-logo" />
+              <h2 class="cert-title">The Complete SQL Bootcamp: Go from Zero to Hero</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Complete SQL Bootcamp: Go from Zero to Hero certification from Udemy, mastering SQL for database management and data analysis.
+              </p>
+              <button
+                      class="btn btn-view-cert"
+                      onclick="location.href='https://www.udemy.com/certificate/UC-79138bc5-ce79-4b47-86b8-7ca5dc803b5f/'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Certification Machine Learning and AI Foundations: Recommendations:  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Li.png" alt="Li Logo" class="cert-logo" />
+              <h2 class="cert-title">Machine Learning and AI Foundations: Recommendations</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Machine Learning and AI Foundations: Recommendations certificate from LinkedIn Learning, demonstrating foundational knowledge in AI-driven recommendations.
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/CertificateOfCompletion_Machine Learning and AI Foundations Recommendations.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Certification Edge Analytics: IoT and Data Science:  -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/Li.png" alt="Li Logo" class="cert-logo" />
+              <h2 class="cert-title">Edge Analytics: IoT and Data Science</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Earned the Edge Analytics: IoT and Data Science certification from LinkedIn Learning, enhancing expertise in IoT-driven data analytics.
+
+              </p>
+              <button
+                      class="btn btn-view-cert"
+                      onclick="window.open('./assets/CertificateOfCompletion_Edge Analytics IoT and Data Science.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sankarshgsanap@gmail.com">sankarshgsanap@gmail.com</a></p>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sankarsh100/">LinkedIn</a></p>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p><a href="tel:+15716639997">+1-571-663-9997</a></p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon github-icon"
+          />
+          <p><a href="https://github.com/Sankarsh100">GitHub</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <p>Thank you for checking out my work! I appreciate your support and hope you find something that resonates with you. Your engagement means a lot to me!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
